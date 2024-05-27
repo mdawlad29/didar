@@ -1,14 +1,19 @@
-import Footer from "@/components/partials/Footer";
-import Navbar from "@/components/partials/Navbar";
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { Montserrat } from "next/font/google";
-import "../scss/global.scss";
+import "./globals.css";
 const inter = Montserrat({ subsets: ["latin"] });
+const Message = dynamic(() => import("@/components/Message/Message"), {
+  ssr: false,
+});
+const Layout = dynamic(() => import("@/components/Layouts/Layout"), {
+  ssr: false,
+});
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Mohammad Awlad",
-    default: "Mohammad Awlad | Home",
+    template: "%s | Didarul Islam",
+    default: "Didarul Islam | Home",
   },
   description: "My personal portfolio website.",
 };
@@ -21,11 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
-          <Navbar />
-          {children}
-        </main>
-        <Footer />
+        <Layout>
+          <main className="min-h-screen">{children}</main>
+        </Layout>
+        <Message />
       </body>
     </html>
   );

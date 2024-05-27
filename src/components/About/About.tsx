@@ -63,41 +63,37 @@ const About = () => {
 
           <div className="lg:space-y-5 space-y-3 lg:pt-14 pt-4">
             <p className="text-justify text-sm font-medium">
-              I am Md. Awlad, A frontend web developer. I can do any kind of
-              responsive website like portfolio, E-commerce website, PSD to
-              HTML, Figma to HTML and customization.
-            </p>
-            <p className="text-justify text-sm font-medium">
-              I have professional experience in JavaScript Framework(React JS),
-              React JS wrapper(Next JS), JavaScript library(React JS), Frontend
-              toolkit (Tailwind CSS, Material UI, Ant Design, Bootstrap5, CSS3),
-              HTML5, JavaScript, TypeScript, ES6, API integration.
+              This is Didarul Islam, a skilled Network Engineer with extensive
+              experience in corporate settings and ISPs. Expert with MikroTik,
+              Cisco, Huawei, and Juniper devices, I design and maintain networks
+              for seamless connectivity and strong security. Always up-to-date
+              with the latest tech, I deliver reliable and efficient network
+              solutions
             </p>
 
             {/*----- Personal Info -----*/}
             <div className="flex justify-between flex-wrap items-center lg:pt-5">
-              {/*----- Left ------*/}
               <div>
                 <div className="flex items-center gap-2">
                   <h4 className="text-accent text-sm font-bold w-20">Name</h4>
                   <h2>:</h2>
-                  <h4 className="text-sm">Md Awlad</h4>
+                  <h4 className="text-sm">Didarul Islam</h4>
                 </div>
                 <div className="flex items-center gap-2">
                   <h4 className="text-accent text-sm font-bold w-20">
                     Education
                   </h4>
                   <h2>:</h2>
-                  <h4 className="text-sm">Diploma in Computer</h4>
+                  <h4 className="text-sm">Bsc in CSE</h4>
                 </div>
                 <div className="flex flex-wrap items-center gap-2">
                   <h4 className="text-accent text-sm font-bold w-20">Email</h4>
                   <h2>:</h2>
                   <Link
-                    href="mailto:mdawladbdinfo@gmail.com"
+                    href="mailto:didarulcse3655@gmail.com"
                     className="text-sm text-primary"
                   >
-                    mdawladbdinfo@gmail.com
+                    didarulcse3655@gmail.com
                   </Link>
                 </div>
               </div>
@@ -108,10 +104,10 @@ const About = () => {
                   <h4 className="text-accent text-sm font-bold w-20">Phone</h4>
                   <h2>:</h2>
                   <Link
-                    href={"tel:+880 1725385909"}
+                    href={"tel:+880 1871141725"}
                     className="text-sm text-primary"
                   >
-                    +880 1725385909
+                    +880 1871141725
                   </Link>
                 </div>
                 <div className="flex items-center gap-2">
@@ -130,7 +126,9 @@ const About = () => {
                 <div className="flex items-center gap-2">
                   <h4 className="text-accent text-sm font-bold w-20">Hobby</h4>
                   <h2>:</h2>
-                  <h4 className="text-sm">Coding, Cricket, Football</h4>
+                  <h4 className="text-sm">
+                    Public Speaking, Travelling, Football
+                  </h4>
                 </div>
               </div>
             </div>

@@ -9,7 +9,6 @@ const links = [
   { name: "about", link: "#about" },
   { name: "service", link: "#service" },
   { name: "skills", link: "#skill" },
-  { name: "projects", link: "#project" },
   { name: "resume", link: "#resume" },
   { name: "contact", link: "#contact" },
 ];
@@ -60,13 +59,13 @@ const Header = () => {
               }`}
             >
               <Image
-                src={"/assets/images/awlad.jpg"}
-                alt="Awlad"
+                src={"/assets/images/about_image.jpeg"}
+                alt="Didar"
                 width={600}
                 height={600}
                 priority
                 quality={100}
-                className="w-full h-full rounded-full object-cover"
+                className="w-[55px] h-[55px] rounded-full object-contain"
               />
             </Link>
 

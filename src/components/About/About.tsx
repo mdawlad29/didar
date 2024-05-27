@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { BiLinkExternal } from "react-icons/bi";
-import AboutImg from "../../../public/assets/images/about_image.jpeg";
 
 const About = () => {
   return (
@@ -27,10 +26,10 @@ const About = () => {
         >
           <div className="absolute top-1 -right-2 -z-10 w-[100%] h-[101%] bg-primary rounded-lg" />
           <Image
-            src={AboutImg}
+            src={"/assets/images/about_image.jpeg"}
             alt="About Image"
-            width={"0"}
-            height={"0"}
+            width={500}
+            height={500}
             priority
             className="h-full object-cover rounded-lg"
           />

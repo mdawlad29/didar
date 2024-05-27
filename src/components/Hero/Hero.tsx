@@ -99,20 +99,24 @@ const Hero = () => {
             detectRetina: true,
           }}
         />
-        <div className="name-title flex justify-center md:text-[5em] text-[3em]">
-          <h2>hi i&apos;m awlad</h2>
-          <h2>hi i&apos;m awlad</h2>
-          <h2>hi i&apos;m awlad</h2>
+        <div className="name-title flex justify-center lg:text-[5em] md:text-[3em] text-[1.5em]">
+          <h2>hi i&apos;m Didarul Islam</h2>
+          <h2>hi i&apos;m Didarul Islam</h2>
+          <h2>hi i&apos;m Didarul Islam</h2>
         </div>
 
-        <div className="flex justify-center items-center h-full text-neutral font-bold md:text-4xl text-[30px] md:mt-10 mt-7">
+        <div className="flex justify-center items-center h-full text-neutral font-bold md:text-4xl text-[20px] md:mt-10 mt-5">
           <TypeAnimation
             sequence={[
-              "Frontend Web Developer_",
+              "WINDOWS & SERVER_",
               4000,
-              "MERN Stack Developer_",
+              "REDHAT & CISCO_",
               4000,
-              "Freelancer_",
+              "JUNIPER & HUAWEI_",
+              4000,
+              "MIKROTIK & VSOL_",
+              4000,
+              "BDCOM & CDATA & AVEIS_",
               4000,
             ]}
             wrapper="span"

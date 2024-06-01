@@ -1,17 +1,12 @@
 "use client";
+import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { motion, useScroll } from "framer-motion";
-import dynamic from "next/dynamic";
-import { RiGraduationCapFill } from "react-icons/ri";
-import { MdWork } from "react-icons/md";
 import { BiLinkExternal } from "react-icons/bi";
-const LiIcon = dynamic(() => import("../Shared/LiIcon"), {
-  ssr: false,
-});
-const Educations = dynamic(() => import("../Educations/Educations"), {
-  ssr: false,
-});
+import { MdWork } from "react-icons/md";
+import { RiGraduationCapFill } from "react-icons/ri";
+import Educations from "../Educations/Educations";
+import LiIcon from "../Shared/LiIcon";
 
 const Details = ({
   position,
@@ -21,7 +16,7 @@ const Details = ({
 }: {
   position: string;
   company: string;
-  companyLink: string;
+  companyLink?: string;
   time: string;
 }) => {
   const ref = React.useRef(null);
@@ -37,13 +32,13 @@ const Details = ({
         transition={{ duration: 1, type: "spring" }}
         className="space-y-2"
       >
-        <h3 className="capitalize text-accent font-semibold md:text-xl text-lg">
+        <h3 className="capitalize text-accent font-semibold md:text-xl text-sm">
           {position}
         </h3>
         <Link
-          href={companyLink}
+          href={`${companyLink}`}
           target="_blank"
-          className="capitalize text-primary font-bold flex items-center gap-2"
+          className="capitalize text-primary font-bold flex items-center gap-2 text-xs"
         >
           {company} <BiLinkExternal className="text-primary" />
         </Link>
@@ -98,24 +93,36 @@ const Resume = () => {
               />
               <ul className="w-full">
                 <Details
-                  position="Jr. Front-end Developer"
-                  company="Softic"
-                  companyLink="https://softic.ai/"
-                  time="Nov 2023 - present"
+                  position="Assistant Network Engineer-NOC"
+                  company="Velocity Networks Limited-(IIG), Dhaka."
+                  companyLink="https://jadoobroadband.com/"
+                  time="DEC 2023 to present"
                 />
 
                 <Details
-                  position="Front-end Developer"
-                  company="Marhaba Limited"
-                  companyLink="https://marhaba.com.bd/"
-                  time="Jun 2023 - Oct 2023"
+                  position="Guest Trainer in Networking"
+                  company="New Horizons CLC, Chittagong."
+                  companyLink="https://nvit.com.bd/"
+                  time=" JUNE 2023 to Dec 2023"
                 />
 
                 <Details
-                  position="React Developer"
-                  company="Nexis Limited"
-                  companyLink="https://www.nexisltd.com/"
-                  time="May 2022 - May 2023"
+                  position="Guest Trainer in Networking"
+                  company="WELL UP TECHNOLOGY, Chittagong"
+                  companyLink="https://mywellup.com/"
+                  time="JUNE 2022 to Dec 2023"
+                />
+                <Details
+                  position="Technical NOC Engineer"
+                  company="ORANGE COMMUNICATION (ISP)."
+                  companyLink="https://orangebd.online/"
+                  time="OCT 2021 – MARCH 2023"
+                />
+                <Details
+                  position="Support Engineer & Customer Care Executive (ATL)"
+                  company="DIGITAL DOT NET (ISP)."
+                  companyLink="https://ddnbd.com/"
+                  time="APR 2020 – SEP 2021"
                 />
               </ul>
             </div>

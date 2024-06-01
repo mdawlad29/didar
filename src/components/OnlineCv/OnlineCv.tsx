@@ -1,25 +1,12 @@
 "use client";
-import { Projects } from "@/Data/ProjectsData";
 import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { BiLinkExternal } from "react-icons/bi";
-import { BsFacebook, BsGithub, BsTelephoneFill } from "react-icons/bs";
+import { BsFacebook, BsTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import picture from "../../../public/assets/images/awlad.jpg";
-import bootImg from "../../../public/assets/images/bootstrap.png";
-import cssImg from "../../../public/assets/images/css.png";
-import expressImg from "../../../public/assets/images/express.png";
-import htmlImg from "../../../public/assets/images/html.png";
-import jsImg from "../../../public/assets/images/js.png";
-import mongoImg from "../../../public/assets/images/mongo.png";
-import muiImg from "../../../public/assets/images/mui.png";
-import nextImg from "../../../public/assets/images/nextjs.jpg";
-import nodeImg from "../../../public/assets/images/node.png";
-import reactImg from "../../../public/assets/images/reacticon.png";
-import tailImg from "../../../public/assets/images/tailwind.png";
 import CvLiIcon from "../Shared/CvLiIcon";
 
 const Details = ({
@@ -33,7 +20,7 @@ const Details = ({
   company: string;
   companyLink: string;
   time: string;
-  desc: string;
+  desc?: string;
 }) => {
   const ref = React.useRef(null);
   return (
@@ -44,13 +31,13 @@ const Details = ({
         whileInView={{ y: 0 }}
         transition={{ duration: 1, type: "spring" }}
       >
-        <h3 className="capitalize text-accent font-semibold md:text-xl text-lg">
+        <h3 className="capitalize text-accent font-semibold md:text-xl text-sm">
           {position}
         </h3>
         <Link
           href={companyLink}
           target="_blank"
-          className="capitalize text-primary font-bold flex items-center gap-2"
+          className="capitalize text-primary font-bold flex items-center gap-2 text-xs"
         >
           {company} <BiLinkExternal className="text-primary" />
         </Link>
@@ -89,22 +76,24 @@ const OnlineCv = () => {
             <div className="border border-gray-200 rounded-md p-4">
               <div className="text-center">
                 <Image
-                  src={picture}
+                  src={"/assets/images/about_image.jpeg"}
                   alt="Awlad"
-                  width={"0"}
-                  height={"0"}
+                  width={600}
+                  height={600}
                   priority
                   className="w-20 h-20 rounded-full object-cover border-2 border-secondary mx-auto shadow-xl"
                 />
                 <h1 className="text-xl font-semibold text-primary mt-2">
-                  MD. AWLAD
+                  Didarul Islam
                 </h1>
 
-                <p className="text-sm mb-4">@Frontend Web Developer</p>
+                <p className="text-sm mb-4">@Network Engineer</p>
 
                 <div>
                   <Link
-                    href={"https://github.com/mdawlad29?tab=repositories"}
+                    href={
+                      "https://www.linkedin.com/in/didarul-islam-6238052b4//"
+                    }
                     target="_blank"
                   >
                     <button className="bg-accent hover:bg-primary duration-300 ease-in-out font-medium text-neutral sm:text-sm text-xs px-3 py-2 rounded-md uppercase sm:w-32 w-28 lg:w-[100px] lg:text-xs">
@@ -112,7 +101,7 @@ const OnlineCv = () => {
                     </button>
                   </Link>
 
-                  <Link href={"https://www.messenger.com/t/100078916504555"}>
+                  <Link href={"https://www.messenger.com/t/100024472604761"}>
                     <button className="bg-accent hover:bg-primary duration-300 ease-in-out font-medium text-neutral sm:text-sm text-xs px-3 py-2 rounded-md uppercase sm:mx-4 mx-2 sm:w-32 w-28 lg:w-[100px] lg:text-xs">
                       message
                     </button>
@@ -125,18 +114,14 @@ const OnlineCv = () => {
                 <h1 className="uppercase italic text-xl font-semibold text-accent">
                   About Me
                 </h1>
-                <div className="space-y-3 mt-3">
+                <div className="mt-3">
                   <p className="text-justify text-sm font-medium">
-                    I am Md. Awlad, A frontend web developer. I can do any kind
-                    of responsive website like portfolio, E-commerce website,
-                    PSD to HTML, Figma to HTML and customization.
-                  </p>
-                  <p className="text-justify text-sm font-medium">
-                    I have professional experience in JavaScript Framework(React
-                    JS), React JS wrapper(Next JS), JavaScript library(React
-                    JS), Frontend toolkit (Tailwind CSS, Material UI, Ant
-                    Design, Bootstrap5, CSS3), HTML5, JavaScript, TypeScript,
-                    ES6, API integration.
+                    This is Didarul Islam, a skilled Network Engineer with
+                    extensive experience in corporate settings and ISPs. Expert
+                    with MikroTik, Cisco, Huawei, and Juniper devices, I design
+                    and maintain networks for seamless connectivity and strong
+                    security. Always up-to-date with the latest tech, I deliver
+                    reliable and efficient network solutions
                   </p>
                 </div>
               </div>
@@ -148,26 +133,26 @@ const OnlineCv = () => {
                     Full Name
                   </h4>
                   <h2>:</h2>
-                  <h4 className="text-sm">Md. Awlad</h4>
+                  <h4 className="text-sm">Didarul Islam</h4>
                 </div>
                 <div className="flex items-center gap-2">
                   <h4 className="text-accent text-sm font-bold w-20">Phone</h4>
                   <h2>:</h2>
                   <Link
-                    href={"tel:+880 1725385909"}
+                    href={"tel:+880 1871141725"}
                     className="text-sm text-primary"
                   >
-                    +880 1725385909
+                    +880 1871141725
                   </Link>
                 </div>
                 <div className="flex flex-wrap items-center gap-2">
                   <h4 className="text-accent text-sm font-bold w-20">Email</h4>
                   <h2>:</h2>
                   <Link
-                    href="mailto:mdawladbdinfo@gmail.com"
+                    href="mailto:didarulcse3655@gmail.com"
                     className="text-sm text-primary"
                   >
-                    mdawladbdinfo@gmail.com
+                    didarulcse3655@gmail.com
                   </Link>
                 </div>
                 <div className="flex items-center gap-2">
@@ -187,131 +172,69 @@ const OnlineCv = () => {
 
               {/*--- Links ---*/}
               <div className="text-center mt-8">
-                <Link href={"https://www.facebook.com/awlads"} target="_blank">
+                <Link
+                  href={"https://www.facebook.com/didarulcse"}
+                  target="_blank"
+                >
                   <BsFacebook className="inline w-7 h-7 mx-2 text-accent hover:text-primary duration-300 ease-in-out" />
                 </Link>
-                <Link href={"mailto:mdawladbdinfo@gmail.com"}>
+                <Link href={"mailto:didarulcse3655@gmail.com"}>
                   <MdEmail className="inline w-7 h-7 mx-2 text-accent hover:text-primary duration-300 ease-in-out" />
                 </Link>
-                <Link href={"https://github.com/mdawlad29"} target="_blank">
-                  <BsGithub className="inline w-7 h-7 mx-2 text-accent hover:text-primary duration-300 ease-in-out" />
-                </Link>
-                <Link href={"tel:+880 1725385909"}>
+
+                <Link href={"tel:+880 1871141725"}>
                   <BsTelephoneFill className="inline w-7 h-7 mx-2 text-accent hover:text-primary duration-300 ease-in-out" />
                 </Link>
               </div>
             </div>
 
-            {/*---- Skills ----*/}
-            <div className="border border-gray-200 rounded-md p-4 lg:h-[80vh] space-y-8">
+            {/*--- skills ----*/}
+            <div className="border border-gray-200 rounded-md p-4  space-y-8">
               <h1 className="uppercase italic text-xl font-semibold text-accent">
                 skills
               </h1>
 
-              {/*--- Frontend ----*/}
-              <div>
-                <h1 className="text-xl font-semibold text-primary mt-2 text-center">
-                  Frontend
-                </h1>
-                <div className="flex items-center flex-wrap gap-10 mt-8">
-                  <Image
-                    src={reactImg}
-                    alt="Icon"
-                    width={"0"}
-                    height={"0"}
-                    priority
-                    className="w-12 h-12 object-cover"
-                  />
-                  <Image
-                    src={nextImg}
-                    alt="Icon"
-                    width={"0"}
-                    height={"0"}
-                    priority
-                    className="w-12 h-12 object-cover"
-                  />
-                  <Image
-                    src={jsImg}
-                    alt="Icon"
-                    width={"0"}
-                    height={"0"}
-                    priority
-                    className="w-12 h-12 object-cover"
-                  />
-                  <Image
-                    src={muiImg}
-                    alt="Icon"
-                    width={"0"}
-                    height={"0"}
-                    priority
-                    className="w-12 h-12 object-cover"
-                  />
-                  <Image
-                    src={tailImg}
-                    alt="Icon"
-                    width={"0"}
-                    height={"0"}
-                    priority
-                    className="w-12 h-12 object-cover"
-                  />
-                  <Image
-                    src={bootImg}
-                    alt="Icon"
-                    width={"0"}
-                    height={"0"}
-                    priority
-                    className="w-12 h-12 object-cover"
-                  />
-                  <Image
-                    src={htmlImg}
-                    alt="Icon"
-                    width={"0"}
-                    height={"0"}
-                    priority
-                    className="w-12 h-12 object-cover"
-                  />
-                  <Image
-                    src={cssImg}
-                    alt="Icon"
-                    width={"0"}
-                    height={"0"}
-                    priority
-                    className="w-12 h-12 object-cover"
-                  />
-                </div>
-              </div>
-
-              {/*--- Backend ----*/}
-              <div>
-                <h1 className="text-xl font-semibold text-primary mt-2 text-center">
-                  Backend
-                </h1>
-                <div className="flex items-center flex-wrap lg:gap-20 md:gap-16 gap-12 mt-8">
-                  <Image
-                    src={nodeImg}
-                    alt="Icon"
-                    width={"0"}
-                    height={"0"}
-                    priority
-                    className="w-12 h-12 object-cover"
-                  />
-                  <Image
-                    src={expressImg}
-                    alt="Icon"
-                    width={"0"}
-                    height={"0"}
-                    priority
-                    className="w-12 h-12 object-cover"
-                  />
-                  <Image
-                    src={mongoImg}
-                    alt="Icon"
-                    width={"0"}
-                    height={"0"}
-                    priority
-                    className="w-12 h-12 object-cover"
-                  />
-                </div>
+              <div className="flex items-center flex-wrap gap-10 mt-8">
+                <Image
+                  src={"/assets/images/cisco.jpg"}
+                  width={500}
+                  height={500}
+                  alt="Icon"
+                  priority
+                  className="w-12 h-12 object-cover"
+                />
+                <Image
+                  src={"/assets/images/microtik.png"}
+                  width={500}
+                  height={500}
+                  alt="Icon"
+                  priority
+                  className="w-12 h-12 object-cover"
+                />
+                <Image
+                  src={"/assets/images/server.jpg"}
+                  width={500}
+                  height={500}
+                  alt="Icon"
+                  priority
+                  className="w-12 h-12 object-cover"
+                />
+                <Image
+                  src={"/assets/images/junipar.png"}
+                  width={500}
+                  height={500}
+                  alt="Icon"
+                  priority
+                  className="w-12 h-12 object-cover"
+                />
+                <Image
+                  src={"/assets/images/cdata.png"}
+                  width={500}
+                  height={500}
+                  alt="Icon"
+                  priority
+                  className="w-12 h-12 object-cover"
+                />
               </div>
             </div>
           </motion.div>
@@ -329,7 +252,7 @@ const OnlineCv = () => {
             {/*--- CV Button ---*/}
             <div className="flex justify-end">
               <Link
-                href={"/Frontend-Web-Developer.pdf"}
+                href={"/Resume of Didarul Islam.pdf"}
                 download={true}
                 target="_blank"
               >
@@ -351,88 +274,38 @@ const OnlineCv = () => {
               />
               <ul className="w-full">
                 <Details
-                  position="Jr. Front-end Developer"
-                  company="Softic"
-                  companyLink="https://softic.ai/"
-                  time="Nov 2023 - present"
-                  desc="As a frontend developer, I play pivotal role in crafting immersive digital experiences. My responsive encompass designing and building responsive, user-friendly website that meet clients objectives and engage their target audiences effectively. I utilize a range of technologies, including HTML, CSS JavaScript, TypeScript and web development frameworks (ReactJs, NextJS) to bring web designs to life."
+                  position="Assistant Network Engineer-NOC"
+                  company="Velocity Networks Limited-(IIG), Dhaka."
+                  companyLink="https://jadoobroadband.com/"
+                  time="DEC 2023 to present"
                 />
 
                 <Details
-                  position="Front-end Developer"
-                  company="Marhaba Limited"
-                  companyLink="https://marhaba.com.bd/"
-                  time="Jun 2023 - Oct 2023"
-                  desc="As a frontend developer, I play pivotal role in crafting immersive digital experiences. My responsive encompass designing and building responsive, user-friendly website that meet clients objectives and engage their target audiences effectively. I utilize a range of technologies, including HTML, CSS JavaScript and web development frameworks (ReactJs, NextJS) to bring web designs to life."
+                  position="Guest Trainer in Networking"
+                  company="New Horizons CLC, Chittagong."
+                  companyLink="https://nvit.com.bd/"
+                  time=" JUNE 2023 to Dec 2023"
                 />
 
                 <Details
-                  position="React Developer"
-                  company="Nexis Limited"
-                  companyLink="https://www.nexisltd.com/"
-                  time="May 2022 - May 2023"
-                  desc="Understanding of the web development process from inception to deployment, understanding of industry trends and the newest programming languages and the technical skills. Responsible for developing new user-facing, features, determining the structure and design of web pages, building reusable codes, optimizing page loading times and using a variety of markup languages to create the web pages."
+                  position="Guest Trainer in Networking"
+                  company="WELL UP TECHNOLOGY, Chittagong"
+                  companyLink="https://mywellup.com/"
+                  time="JUNE 2022 to Dec 2023"
+                />
+                <Details
+                  position="Technical NOC Engineer"
+                  company="ORANGE COMMUNICATION (ISP)."
+                  companyLink="https://orangebd.online/"
+                  time="OCT 2021 – MARCH 2023"
+                />
+                <Details
+                  position="Support Engineer & Customer Care Executive (ATL)"
+                  company="DIGITAL DOT NET (ISP)."
+                  companyLink="https://ddnbd.com/"
+                  time="APR 2020 – SEP 2021"
                 />
               </ul>
-            </div>
-
-            {/*----- Projects ------*/}
-            <div className="pt-4">
-              <h1 className="uppercase italic text-xl font-semibold text-accent">
-                projects
-              </h1>
-              <div className="flex flex-wrap -mx-4 mt-4">
-                <div className="w-full px-4">
-                  <div className="max-w-full overflow-x-auto">
-                    <table className="table-auto w-full">
-                      <thead>
-                        <tr className="bg-primary text-center">
-                          <th className="w-1/6 min-w-[160px] text-base font-semibold text-neutral py-2 px-3 border-l border-transparent">
-                            ID
-                          </th>
-                          <th className="w-1/6 min-w-[160px] text-base font-semibold text-neutral py-2 px-3 border-l border-transparent">
-                            Project Name
-                          </th>
-                          <th className="w-1/6 min-w-[160px] text-base font-semibold text-neutral py-2 px-3 border-l border-transparent">
-                            Core Language
-                          </th>
-                          <th className="w-1/6 min-w-[160px] text-base font-semibold text-neutral py-2 px-3 border-l border-transparent">
-                            Project Link
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {Projects?.map((project: any, index) => (
-                          <tr key={project?.id}>
-                            <td className="text-center text-dark font-medium text-base py-2 px-2 bg-[#F3F6FF] border-b border-l border-gray-200">
-                              {index + 1}
-                            </td>
-                            <td className="text-center text-dark font-medium text-base py-2 px-2 bg-[#F3F6FF] border-b border-l border-gray-200 capitalize">
-                              {project?.name}
-                            </td>
-                            <td className="text-center text-dark font-medium text-base py-2 px-2 bg-[#F3F6FF] border-b border-l border-gray-200">
-                              {project?.language}
-                            </td>
-                            <td className="text-center text-dark font-medium text-base py-2 px-2 bg-[#F3F6FF] border-b border-l border-gray-200">
-                              <button
-                                onClick={() => router.push(project?.link)}
-                                disabled={project?.link === "" ? true : false}
-                                className={`${
-                                  project?.link === ""
-                                    ? "bg-gray-300 text-accent text-sm px-5 py-2 rounded-md cursor-not-allowed"
-                                    : "bg-accent hover:bg-primary duration-300 ease-in-out text-neutral text-sm px-5 py-2 rounded-md"
-                                }`}
-                              >
-                                Click Here
-                              </button>
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
             </div>
           </motion.div>
         </div>

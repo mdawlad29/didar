@@ -44,7 +44,7 @@ const Header = () => {
         <div
           className={`${
             activeNav ? activeNav : "bg-secondary-50"
-          } text-neutral py-6 lg:px-20 md:px-10 sm:px-6 px-4 `}
+          } text-neutral py-3 lg:px-20 md:px-10 sm:px-6 px-4 `}
         >
           <div
             className={`flex ${
@@ -65,7 +65,7 @@ const Header = () => {
                 height={600}
                 priority
                 quality={100}
-                className="w-[55px] h-[55px] rounded-full object-contain"
+                className="w-[48px] h-[48px] rounded-full object-contain"
               />
             </Link>
 

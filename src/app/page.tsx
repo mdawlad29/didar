@@ -10,10 +10,6 @@ const Resume = dynamic(() => import("@/components/Resume/Resume"), {
   ssr: false,
 });
 
-const Projects = dynamic(() => import("@/components/Projects/Projects"), {
-  ssr: false,
-});
-
 const Skills = dynamic(() => import("@/components/Skills/Skills"), {
   ssr: false,
 });
@@ -29,7 +25,6 @@ export default function Home() {
         <About />
         <Services />
         <Skills />
-        <Projects />
         <Resume />
         <Contact />
       </div>

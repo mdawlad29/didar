@@ -1,6 +1,6 @@
 "use client";
-import React from "react";
 import { motion, useScroll } from "framer-motion";
+import React from "react";
 import LiIcon from "../Shared/LiIcon";
 
 const Details = ({
@@ -10,11 +10,11 @@ const Details = ({
   year,
   gpa,
 }: {
-  position: string;
-  institute: string;
-  studyName: string;
-  year: string;
-  gpa: string;
+  position?: string;
+  institute?: string;
+  studyName?: string;
+  year?: string;
+  gpa?: string;
 }) => {
   const ref = React.useRef(null);
   return (
@@ -56,18 +56,22 @@ const Educations = () => {
         />
         <ul className="w-full">
           <Details
+            position="Bsc in CSE"
+            institute="Institute: Northern University Bangladesh (NUB)"
+            studyName="Field of Study: CSE"
+            year="Running"
+          />
+          <Details
             position="Diploma"
-            institute="Institute: Bhola Polytechnic institute"
+            institute="Institute: Chattogram Polytechnic institute"
             studyName="Field of Study: Computer"
             year="Passing Year: 2022"
-            gpa="CGPA: 3.67 on 4.00"
           />
           <Details
             position="Secondary School Certificate(SSC)"
-            institute="Institute: Banker Hat Co-operative High School"
+            institute="Institute: Tailardwip Barakhain Ershad Ali High School"
             studyName="Field of Study: Science"
             year="Passing Year: 2017"
-            gpa="CGPA: 4.25 on 5.00"
           />
         </ul>
       </div>

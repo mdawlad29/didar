@@ -141,7 +141,7 @@ const About = () => {
                 </button>
               </Link>
               <Link
-                href={"/Frontend-Web-Developer.pdf"}
+                href={"/Resume of Didarul Islam.pdf"}
                 download={true}
                 target="_blank"
               >

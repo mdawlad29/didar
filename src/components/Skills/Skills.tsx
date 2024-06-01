@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
 
 const Skill = ({ name, x, y }: { name: string; x: string; y: string }) => {
@@ -43,23 +42,22 @@ const Skills = () => {
         </motion.div>
         <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circle">
           <motion.div
-            className="flex items-center justify-center rounded-full font-semibold bg-primary text-neutral shadow-black cursor-pointer lg:p-5 md:p-4 p-2 xs:text-xs"
+            className="flex items-center justify-center rounded-full font-semibold bg-primary text-neutral shadow-black cursor-pointer md:p-3 p-2 xs:text-xs"
             whileHover={{ scale: 1.05 }}
           >
-            Web
+            Networking
           </motion.div>
-          <Skill name="HTML" x="-29vw" y="2vw" />
-          <Skill name="CSS" x="-15vw" y="-9.8vw" />
-          <Skill name="Javascript" x="14vw" y="0vw" />
-          <Skill name="Typescript" x="28vw" y="6vw" />
-          <Skill name="ReactJS" x="-12vw" y="5vw" />
-          <Skill name="NextJS" x="-25vw" y="-15vw" />
-          <Skill name="Tailwind CSS" x="13vw" y="-13vw" />
-          <Skill name="Ant Design" x="0vw" y="16vw" />
-          <Skill name="Material UI" x="32vw" y="-5vw" />
-          <Skill name="Bootstrap" x="0vw" y="-20.2vw" />
-          <Skill name="Web Design" x="-22vw" y="18vw" />
-          <Skill name="Figma" x="18vw" y="18vw" />
+          <Skill name="AVEIS" x="-15vw" y="-9.8vw" />
+          <Skill name="WINDOWS" x="14vw" y="0vw" />
+          <Skill name="SERVER" x="28vw" y="6vw" />
+          <Skill name="REDHAT" x="-12vw" y="5vw" />
+          <Skill name="CISCO" x="-25vw" y="-15vw" />
+          <Skill name="JUNIPER" x="13vw" y="-13vw" />
+          <Skill name="HUAWEI" x="0vw" y="16vw" />
+          <Skill name="MIKROTIK" x="32vw" y="-5vw" />
+          <Skill name="VSOL" x="0vw" y="-20.2vw" />
+          <Skill name="BDCOM" x="-22vw" y="18vw" />
+          <Skill name="CDATA" x="18vw" y="18vw" />
         </div>
       </div>
     </>

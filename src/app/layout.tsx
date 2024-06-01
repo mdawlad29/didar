@@ -1,15 +1,10 @@
+import Layout from "@/components/Layouts/Layout";
+import Message from "@/components/Message/Message";
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import { Montserrat } from "next/font/google";
 import PageRender from "./PageRender";
 import "./globals.css";
 const inter = Montserrat({ subsets: ["latin"] });
-const Message = dynamic(() => import("@/components/Message/Message"), {
-  ssr: false,
-});
-const Layout = dynamic(() => import("@/components/Layouts/Layout"), {
-  ssr: false,
-});
 
 export const metadata: Metadata = {
   title: {

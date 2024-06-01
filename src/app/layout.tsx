@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Montserrat } from "next/font/google";
+import PageRender from "./PageRender";
 import "./globals.css";
 const inter = Montserrat({ subsets: ["latin"] });
 const Message = dynamic(() => import("@/components/Message/Message"), {
@@ -26,10 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Layout>
-          <main className="min-h-screen">{children}</main>
-        </Layout>
-        <Message />
+        <PageRender>
+          <Layout>{children}</Layout>
+          <Message />
+        </PageRender>
       </body>
     </html>
   );

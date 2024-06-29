@@ -23,7 +23,7 @@ const Hero = () => {
         onCopy={(event) => {
           event.preventDefault();
         }}
-        className="bg-[#222222] md:h-[65vh] h-[55vh]"
+        className="bg-[#222222] md:h-[65vh] h-[30vh]"
       >
         <Particles
           id="tsparticles"
@@ -99,24 +99,24 @@ const Hero = () => {
             detectRetina: true,
           }}
         />
-        <div className="name-title flex justify-center lg:text-[5em] md:text-[3em] text-[1.5em]">
-          <h2>hi i&apos;m Didarul Islam</h2>
-          <h2>hi i&apos;m Didarul Islam</h2>
-          <h2>hi i&apos;m Didarul Islam</h2>
+        <div className="name-title flex justify-center lg:text-[5em] md:text-[3em] text-[1.5em] md:top-[5rem] top-[1.5rem]">
+          <h2>i&apos;m Didarul Islam</h2>
+          <h2>i&apos;m Didarul Islam</h2>
+          <h2>i&apos;m Didarul Islam</h2>
         </div>
 
-        <div className="flex justify-center items-center h-full text-neutral font-bold md:text-4xl text-[20px] md:mt-10 mt-5">
+        <div className="flex justify-center items-center h-full text-neutral font-bold md:text-4xl text-[20px] lg:mt-14 md:mt-7 -mt-3">
           <TypeAnimation
             sequence={[
-              "WINDOWS & SERVER_",
+              "WINDOWS SERVER",
               4000,
-              "REDHAT & CISCO_",
+              "REDHAT",
               4000,
-              "JUNIPER & HUAWEI_",
+              "JUNIPER & HUAWEI",
               4000,
-              "MIKROTIK & VSOL_",
+              "CISCO & MIKROTIK",
               4000,
-              "BDCOM & CDATA & AVEIS_",
+              "BDCOM, VSOL, CDATA, AVEIS & AIR MEDIA",
               4000,
             ]}
             wrapper="span"

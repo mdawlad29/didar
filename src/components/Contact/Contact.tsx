@@ -30,7 +30,7 @@ const Contact = () => {
         }}
         className="lg:mb-10 md:mb-7 mb-4"
       >
-        <h1 className="text-accent text-center md:text-4xl text-2xl italic font-semibold">
+        <h1 className="text-accent text-center md:text-4xl text-2xl font-semibold">
           Contact Me
         </h1>
         <div className="md:w-24 w-16 h-1 mx-auto bg-accent md:mt-2 mt-1" />
@@ -160,6 +160,7 @@ const Contact = () => {
             <Link href={"https://www.facebook.com/didarulcse"} target="_blank">
               <BsFacebook className="inline w-7 h-7 mx-2 text-accent hover:text-primary duration-300 ease-in-out" />
             </Link>
+
             <Link
               href={"https://www.linkedin.com/in/didarul-islam-6238052b4//"}
               target="_blank"

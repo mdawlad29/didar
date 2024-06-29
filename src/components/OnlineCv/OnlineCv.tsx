@@ -111,7 +111,7 @@ const OnlineCv = () => {
 
               {/*---- Description ----*/}
               <div className="mt-8">
-                <h1 className="uppercase italic text-xl font-semibold text-accent">
+                <h1 className="uppercase text-xl font-semibold text-accent">
                   About Me
                 </h1>
                 <div className="mt-3">
@@ -190,13 +190,13 @@ const OnlineCv = () => {
 
             {/*--- skills ----*/}
             <div className="border border-gray-200 rounded-md p-4  space-y-8">
-              <h1 className="uppercase italic text-xl font-semibold text-accent">
+              <h1 className="uppercase text-xl font-semibold text-accent">
                 skills
               </h1>
 
               <div className="flex items-center flex-wrap gap-10 mt-8">
                 <Image
-                  src={"/assets/images/cisco.jpg"}
+                  src={"/assets/images/red-hat-icon.png"}
                   width={500}
                   height={500}
                   alt="Icon"
@@ -204,7 +204,7 @@ const OnlineCv = () => {
                   className="w-12 h-12 object-cover"
                 />
                 <Image
-                  src={"/assets/images/microtik.png"}
+                  src={"/assets/images/windows-server-icon.png"}
                   width={500}
                   height={500}
                   alt="Icon"
@@ -212,7 +212,15 @@ const OnlineCv = () => {
                   className="w-12 h-12 object-cover"
                 />
                 <Image
-                  src={"/assets/images/server.jpg"}
+                  src={"/assets/images/optical-terminal-olt-icon.png"}
+                  width={500}
+                  height={500}
+                  alt="Icon"
+                  priority
+                  className="w-12 h-12 object-cover"
+                />
+                <Image
+                  src={"/assets/images/routing-icon.png"}
                   width={500}
                   height={500}
                   alt="Icon"
@@ -229,6 +237,22 @@ const OnlineCv = () => {
                 />
                 <Image
                   src={"/assets/images/cdata.png"}
+                  width={500}
+                  height={500}
+                  alt="Icon"
+                  priority
+                  className="w-12 h-12 object-cover"
+                />
+                <Image
+                  src={"/assets/images/cisco.jpg"}
+                  width={500}
+                  height={500}
+                  alt="Icon"
+                  priority
+                  className="w-12 h-12 object-cover"
+                />
+                <Image
+                  src={"/assets/images/microtik.png"}
                   width={500}
                   height={500}
                   alt="Icon"
@@ -262,7 +286,7 @@ const OnlineCv = () => {
               </Link>
             </div>
 
-            <h1 className="uppercase italic text-xl font-semibold text-accent">
+            <h1 className="uppercase text-xl font-semibold text-accent">
               experience
             </h1>
 
@@ -274,7 +298,7 @@ const OnlineCv = () => {
               />
               <ul className="w-full">
                 <Details
-                  position="Assistant Network Engineer-NOC"
+                  position="Senior Engineer-NOC"
                   company="Velocity Networks Limited-(IIG), Dhaka."
                   companyLink="https://jadoobroadband.com/"
                   time="DEC 2023 to present"

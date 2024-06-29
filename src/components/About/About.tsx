@@ -12,7 +12,7 @@ const About = () => {
           event.preventDefault();
         }}
         id="about"
-        className="grid md:grid-cols-3 grid-cols-1 gap-3 lg:pt-20 md:pt-16 pt-10"
+        className="grid md:grid-cols-3 grid-cols-1 gap-3 lg:items-center lg:pt-20 md:pt-16 pt-10"
       >
         {/*---- Left ----*/}
         <motion.div
@@ -55,7 +55,7 @@ const About = () => {
               duration: 1,
             }}
           >
-            <h1 className="text-accent md:text-4xl text-2xl italic font-semibold">
+            <h1 className="text-accent md:text-4xl text-2xl font-semibold">
               About Me
             </h1>
             <div className="md:w-24 w-16 h-1 bg-accent md:mt-2 mt-1" />
@@ -135,7 +135,7 @@ const About = () => {
 
             {/*----- Button ------*/}
             <div className="flex items-center gap-4 lg:pt-5">
-              <Link href={"/online_cv"} target="_blank">
+              <Link href={"/online_cv"}>
                 <button className="bg-primary hover:bg-accent duration-300 ease-in-out font-medium text-neutral text-sm px-4 py-2 w-32 sm:w-40 rounded-full uppercase">
                   online cv
                 </button>

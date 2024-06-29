@@ -59,13 +59,12 @@ const Educations = () => {
             position="Bsc in CSE"
             institute="Institute: Northern University Bangladesh (NUB)"
             studyName="Field of Study: CSE"
-            year="Running"
           />
           <Details
             position="Diploma"
             institute="Institute: Chattogram Polytechnic institute"
             studyName="Field of Study: Computer"
-            year="Passing Year: 2022"
+            year="Passing Year: 2021"
           />
           <Details
             position="Secondary School Certificate(SSC)"

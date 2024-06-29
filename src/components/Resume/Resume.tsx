@@ -72,7 +72,7 @@ const Resume = () => {
           }}
           className="lg:mb-10 md:mb-7 mb-4"
         >
-          <h1 className="text-accent text-center md:text-4xl text-2xl italic font-semibold">
+          <h1 className="text-accent text-center md:text-4xl text-2xl font-semibold">
             My Resume
           </h1>
           <div className="md:w-24 w-16 h-1 mx-auto bg-accent md:mt-2 mt-1" />
@@ -93,7 +93,7 @@ const Resume = () => {
               />
               <ul className="w-full">
                 <Details
-                  position="Assistant Network Engineer-NOC"
+                  position="Senior Engineer-NOC"
                   company="Velocity Networks Limited-(IIG), Dhaka."
                   companyLink="https://jadoobroadband.com/"
                   time="DEC 2023 to present"

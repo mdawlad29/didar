@@ -47,9 +47,9 @@ const Header = () => {
           } text-neutral py-3 lg:px-20 md:px-10 sm:px-6 px-4 `}
         >
           <div
-            className={`flex ${
+            className={`flex items-center ${
               activeNav ? "justify-between" : "justify-center"
-            } items-center`}
+            }`}
           >
             <Link
               onClick={() => setExpandedMenu(true)}

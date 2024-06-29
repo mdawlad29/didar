@@ -8,19 +8,21 @@ const Footer = () => {
       onCopy={(event) => {
         event.preventDefault();
       }}
-      className="bg-secondary-50 text-neutral py-4 lg:px-28 md:px-12 sm:px-8 px-4 text-center text-sm"
+      className="flex md:justify-between justify-center flex-wrap items-center bg-secondary-50 text-neutral py-4 lg:px-28 md:px-12 sm:px-8 px-4"
     >
-      <div>
-        &copy;{" "}
+      <small className="text-[10px]">
+        &copy; 2024 Didarul Islam All rights reserved.
+      </small>
+      <small className="text-[10px]">
+        Designed & Developed By{" "}
         <Link
           target="_blank"
           href="https://awlad.vercel.app"
           className="text-primary font-bold hover:underline"
         >
-          Awlad
-        </Link>{" "}
-        all reserved.
-      </div>
+          Mohammad Awlad
+        </Link>
+      </small>
     </div>
   );
 };
